@@ -54,12 +54,28 @@ li:hover {
     background-color: #f2eee3;
 }
 
+#main-page-gif {
+    position: absolute;
+    background-color: slategray;
+    right: 0%;
+    width: 45%;
+    height: 100%;
+    z-index: -1;
+}
+
 #name-card {
     position: absolute;
-    left: 20%;
-    top: 275px;
+    left: 15%;
+    top: 150px;
     padding: 40px;
     margin: auto;
+}
+
+#portrait {
+    position: absolute;
+    left: 400px;
+    top: 15%;
+    width: 40%;
 }
 
 #about-me {
@@ -87,6 +103,14 @@ li:hover {
     top: 2000px;
     left: 150px;
     padding: 20% 100px;
+}
+
+.Project-gif {
+    max-width: 100%;
+    width: 75%;
+    height: auto;
+    position: relative;
+    padding: 10%;
 }
 
 /*footer {
