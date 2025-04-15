@@ -58,18 +58,37 @@
             <div class="gif-description">
                 <p>
                     Here is a clip of my first full game. It is a horror game where I focused on shadows and lighting. I also learned to create a
-                    full menu screen and animate an intro. It is currently playable on itch.io.
+                    full menu screen and animate an intro. This was my first introduction to handling visual optimization as the game leaned heavily
+                    on dynamic lighting. I had to learn how to fine tune the LOD distances to make sure the game ran at the desired rate. It is currently playable on itch.io.
                 </p>
+                <a href="https://cperkins577.itch.io/the-woodpile">Play The Woodpile on Itch.io</a>
             </div>
             <img src="souls-gif.gif" alt="Clip of souls-like game" class="project-gif">
             <div class="gif-description">
                 <p>
-                    On this project I focused on creating a souls-like gameplay system, with a lock-on camera and stamina regen system. 
+                    On this project I focused on creating a souls-like gameplay system, with a lock-on camera and stamina regen system.
                     This was my first attempt at making connections between actor components and player UI. I used delegates to pass health information from the component, to the UI in blueprints.
+                    This was an exercise in making clean, modular, and uncoupled connetions between components. This was the first time I had implemented a dynamic UI that reacted to player state.
                 </p>
             </div>
             <img src="bug-gif.gif" alt="Clip of mouse interactive game" class="project-gif">
+            <div class="gif-description">
+                <p>
+                    Here I played around with mouse interactions and moving objects. This was a prototype for a game jam that was going to focus on sorting bugs into groups in a
+                    timed setting. I needed a 3d setting and actors that would move around in random ways, and needed the ability to be picked up, moved, and placed without getting
+                    stuck or overlapping. Also needed to make sure this action had visual feedback.
+                </p>
+            </div>
             <img src="grenade-gif.gif" alt="Clip of sticky grenade and physics" class="project-gif">
+            <div class="gif-description">
+                <p>
+                    This was the prototype for another idea I wanted to eventually bring to a full game. It was a sticky grenade dodgeball game, with ragdoll deaths and eventually multiplayer.
+                    Here I focused on creating my own animations and learning how to attach components to sockets as well as perform sphere traces to attach the grenade to the bones of the actors.
+                    This was also an excercise in object-oriented programming, as I created a base grenade class that I would then derive other classes from to create different types of grenades.
+                    I also toyed with creating impulses to create explosion effects, which as shown in the clip, had not yet begun to behave the way I intended. I plan to eventually bring this game idea
+                    to fruition, after I gain enough experience.
+                </p>
+            </div>
         </div>
     </div>
 </body>
