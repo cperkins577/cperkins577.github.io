@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1820px) {
+    #main-page-gif {
+        display: none;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -22,9 +28,10 @@ h1 {
     position: fixed;
     margin: 0;
     padding: 0;
-    width: 150px; 
+    width: 150px;
     height: 150px;
 }
+
 .nav {
     list-style-type: none;
     margin-top: 150px;
@@ -54,6 +61,11 @@ li:hover {
     background-color: #f2eee3;
 }
 
+#main-page {
+    margin-left: 150px;
+    height: 100vh;
+}
+
 #main-page-gif {
     position: absolute;
     background-color: slategray;
@@ -64,18 +76,19 @@ li:hover {
 }
 
 #name-card {
-    position: absolute;
-    left: 15%;
-    top: 150px;
+    float: left;
     padding: 40px;
-    margin: auto;
+    margin-top: 10%;
+    margin-bottom: auto;
+    width: 50%;
+    height: fit-content;
 }
 
 #portrait {
     position: absolute;
-    left: 400px;
-    top: 15%;
-    width: 40%;
+    float: right;
+    left: 650px;
+    max-width: 350px;
 }
 
 #about-me {
