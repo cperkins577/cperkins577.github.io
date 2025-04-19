@@ -24,6 +24,11 @@ h1 {
     text-align: left;
 }
 
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
 #logo {
     position: fixed;
     margin: 0;
@@ -93,49 +98,55 @@ li:hover {
 
 #about-me {
     scroll-behavior: smooth;
-    position: absolute;
-    top: 1000px;
-    left: 150px;
-    padding: 10% 100px;
+    margin-left: 150px;
+    height: 100vh;
+    padding: 10% 10% 0 10%;
+}
+
+#about-left {
+    width: 40%;
+    float: left;
+    margin-right: 10%;
+}
+
+#about-right {
+    width: 40%;
+    float: right;
+    margin-right: 10%;
 }
 
 #about-top {
-    width: 50%;
+    text-align: center;
 }
 
 #about-bottom {
     position: relative;
-    left: 50%;
-    width: 50%;
+    text-align: center;
 }
 
 #projects {
     scroll-behavior: smooth;
     background-color: #5065a7;
-    position: absolute;
-    top: 2000px;
-    left: 150px;
-    right: 0%;
-    height: 100%;
+    height: fit-content;
+    margin-left: 150px;
+    padding-top: 5%;
 }
 
 #project-main {
-    position: absolute;
     text-align: center;
-    margin: 2% 20%;
-    z-index: 1;
-    align-self: center;
-    top: 10px;
+    width: 70%;
+    display: block;
+    margin: auto;
 }
 
 #gif-container {
-    position: absolute;
     background-color: #5065a7;
-    z-index: 0;
     max-width: 90%;
-    top: 5%;
     padding: 5%;
-    align-content: space-between;
+    align-content: center;
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
 #Project-gif {
@@ -148,15 +159,17 @@ li:hover {
 
 #Diploma {
     position: relative;
-    width: 30%;
-    left: 10%;
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 10%;
 }
 
 #about-portrait {
-    position: absolute;
-    top: 20%;
-    left: 60%;
-    width: 20%;
+    width: 60%;
+    display: block;
+    margin: auto;
+    padding-bottom: 10%;
 }
 
 .project-gif {
@@ -166,9 +179,14 @@ li:hover {
 .gif-description {
     position: relative;
     float: right;
-    margin-top: 5%;
     width: 30%;
-    right: 10%;
+    display: block;
+    margin: auto;
+}
+
+.gif-container-item {
+    height: fit-content;
+    padding: 5% 0% 5% 0%;
 }
 
 /*footer {

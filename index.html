@@ -30,24 +30,29 @@
         </div>
     </div>
     <div id="about-me">
-        <img src="portrait.jpg" alt="Myself in an NHL locker room" id="about-portrait">
-        <p id="about-top">
-            Born and raised in North Carolina, I graduated from the University
-            of Alabama in 2020 in Physics. Focusing on Astrophysics, I found my passion for
-            programming while writing scripts and programs for my high energy physics labs and
-            I began to pursue a minor in Computer Science alongside Mathematics. Through college,
-            I worked part-time at a local Chipotle in order to pay bills and save money, working on
-            small personal projects and developing my programming skills on the side. Outside of class and
-            after I graduated, I learned Javascript, HTML, CSS, and some React. Now I am focusing on C++
-            and Unreal Engine, hoping to begin applying all that I have learned to another passion of mine: video games!
-        </p>
-        <img src="diploma.jpg" alt="University of Alabama degree" id="Diploma">
-        <p id="about-bottom">
-            I am currently living in Raleigh, North Carolina and working as an Assistant General Manager for
-            a local restraunt. In my spare time I continue to learn and grow in any direction I can. In late 2024 I released
-            my first complete game experience on Itch.io, and have done work involving animation state machines, UI handling,
-            skeleton rigging, and regular gameplay programming, which is my focus. I work in both UE Blueprints and C++.
-        </p>
+        <div id="about-left">
+            <p id="about-top">
+                Born and raised in North Carolina, I graduated from the University
+                of Alabama in 2020 in Physics. Focusing on Astrophysics, I found my passion for
+                programming while writing scripts and programs for my high energy physics labs and
+                I began to pursue a minor in Computer Science alongside Mathematics. Through college,
+                I worked part-time at a local Chipotle in order to pay bills and save money, working on
+                small personal projects and developing my programming skills on the side. Outside of class and
+                after I graduated, I learned Javascript, HTML, CSS, Godot, and some React. Now I am focusing on C++
+                and Unreal Engine, hoping to begin applying all that I have learned to another passion of mine: video games!
+            </p>
+            <img src="diploma.jpg" alt="University of Alabama degree" id="Diploma">
+
+        </div>
+        <div id="about-right">
+            <img src="portrait.jpg" alt="Myself in an NHL locker room" id="about-portrait">
+            <p id="about-bottom">
+                I am currently living in Raleigh, North Carolina and working as an Assistant General Manager for
+                a local restraunt. In my spare time I continue to learn and grow in any direction I can. In late 2024 I released
+                my first complete game experience on Itch.io, and have done work involving animation state machines, UI handling,
+                skeleton rigging, and regular gameplay programming, which is my focus. I work in both UE Blueprints and C++.
+            </p>
+        </div>
     </div>
     <div id="projects">
         <p id="project-main">
@@ -56,40 +61,48 @@
             I am always looking for new subjects and challenges to tackle!
         </p>
         <div id="gif-container">
-            <img src="woodpile-gif.gif" alt="Clip of 'Woodpile' game" class="project-gif">
-            <div class="gif-description">
-                <p>
-                    Here is a clip of my first full game. It is a horror game where I focused on shadows and lighting. I also learned to create a
-                    full menu screen and animate an intro. This was my first introduction to handling visual optimization as the game leaned heavily
-                    on dynamic lighting. I had to learn how to fine tune the LOD distances to make sure the game ran at the desired rate. It is currently playable on itch.io.
-                </p>
-                <a href="https://cperkins577.itch.io/the-woodpile">Play The Woodpile on Itch.io</a>
+            <div class="gif-container-item">
+                <img src="woodpile-gif.gif" alt="Clip of 'Woodpile' game" class="project-gif">
+                <div class="gif-description">
+                    <p>
+                        Here is a clip of my first full game. It is a horror game where I focused on shadows and lighting. I also learned to create a
+                        full menu screen and animate an intro. This was my first introduction to handling visual optimization as the game leaned heavily
+                        on dynamic lighting. I had to learn how to fine tune the LOD distances to make sure the game ran at the desired rate. It is currently playable on itch.io.
+                    </p>
+                    <a href="https://cperkins577.itch.io/the-woodpile">Play The Woodpile on Itch.io</a>
+                </div>
             </div>
-            <img src="souls-gif.gif" alt="Clip of souls-like game" class="project-gif">
-            <div class="gif-description">
-                <p>
-                    On this project I focused on creating a souls-like gameplay system, with a lock-on camera and stamina regen system.
-                    This was my first attempt at making connections between actor components and player UI. I used delegates to pass health information from the component, to the UI in blueprints.
-                    This was an exercise in making clean, modular, and uncoupled connetions between components. This was the first time I had implemented a dynamic UI that reacted to player state.
-                </p>
+            <div class="gif-container-item">
+                <img src="souls-gif.gif" alt="Clip of souls-like game" class="project-gif">
+                <div class="gif-description">
+                    <p>
+                        On this project I focused on creating a souls-like gameplay system, with a lock-on camera and stamina regen system.
+                        This was my first attempt at making connections between actor components and player UI. I used delegates to pass health information from the component, to the UI in blueprints.
+                        This was an exercise in making clean, modular, and uncoupled connetions between components. This was the first time I had implemented a dynamic UI that reacted to player state.
+                    </p>
+                </div>
             </div>
-            <img src="bug-gif.gif" alt="Clip of mouse interactive game" class="project-gif">
-            <div class="gif-description">
-                <p>
-                    Here I played around with mouse interactions and moving objects. This was a prototype for a game jam that was going to focus on sorting bugs into groups in a
-                    timed setting. I needed a 3d setting and actors that would move around in random ways, and needed the ability to be picked up, moved, and placed without getting
-                    stuck or overlapping. Also needed to make sure this action had visual feedback.
-                </p>
+            <div class="gif-container-item">
+                <img src="bug-gif.gif" alt="Clip of mouse interactive game" class="project-gif">
+                <div class="gif-description">
+                    <p>
+                        Here I played around with mouse interactions and moving objects. This was a prototype for a game jam that was going to focus on sorting bugs into groups in a
+                        timed setting. I needed a 3d setting and actors that would move around in random ways, and needed the ability to be picked up, moved, and placed without getting
+                        stuck or overlapping. Also needed to make sure this action had visual feedback.
+                    </p>
+                </div>
             </div>
-            <img src="grenade-gif.gif" alt="Clip of sticky grenade and physics" class="project-gif">
-            <div class="gif-description">
-                <p>
-                    This was the prototype for another idea I wanted to eventually bring to a full game. It was a sticky grenade dodgeball game, with ragdoll deaths and eventually multiplayer.
-                    Here I focused on creating my own animations and learning how to attach components to sockets as well as perform sphere traces to attach the grenade to the bones of the actors.
-                    This was also an excercise in object-oriented programming, as I created a base grenade class that I would then derive other classes from to create different types of grenades.
-                    I also toyed with creating impulses to create explosion effects, which as shown in the clip, had not yet begun to behave the way I intended. I plan to eventually bring this game idea
-                    to fruition, after I gain enough experience.
-                </p>
+            <div class="gif-container-item">
+                <img src="grenade-gif.gif" alt="Clip of sticky grenade and physics" class="project-gif">
+                <div class="gif-description">
+                    <p>
+                        This was the prototype for another idea I wanted to eventually bring to a full game. It was a sticky grenade dodgeball game, with ragdoll deaths and eventually multiplayer.
+                        Here I focused on creating my own animations and learning how to attach components to sockets as well as perform sphere traces to attach the grenade to the bones of the actors.
+                        This was also an excercise in object-oriented programming, as I created a base grenade class that I would then derive other classes from to create different types of grenades.
+                        I also toyed with creating impulses to create explosion effects, which as shown in the clip, had not yet begun to behave the way I intended. I plan to eventually bring this game idea
+                        to fruition, after I gain enough experience.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
