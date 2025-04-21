@@ -24,6 +24,12 @@ h1 {
     text-align: left;
 }
 
+h2 {
+    font-family: 'Open Sans';
+    font-size: 75px;
+    text-align: center;
+}
+
 p {
     font-size: 20px;
     text-align: center;
@@ -67,8 +73,11 @@ li:hover {
 }
 
 #main-page {
+    scroll-behavior: smooth;
     margin-left: 150px;
     height: 100vh;
+    min-height: 700px;
+    max-height: 1000px;
 }
 
 #main-page-gif {
@@ -100,6 +109,8 @@ li:hover {
     scroll-behavior: smooth;
     margin-left: 150px;
     height: 100vh;
+    min-height: 900px;
+    max-height: 1000px;
     padding: 10% 10% 0 10%;
 }
 
@@ -186,8 +197,25 @@ li:hover {
 
 .gif-container-item {
     height: fit-content;
-    padding: 5% 0% 5% 0%;
+    padding: 5% 10% 5% 0%;
 }
 
-/*footer {
+.badge-base {
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 0px 100px;
+}
+
+#github-logo {
+    width: 200px;
+}
+
+footer {
+    margin-left: 150px;
 }
