@@ -35,6 +35,17 @@ p {
     text-align: center;
 }
 
+a:link.link-body {
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+}
+
+a:link.link-footer {
+    color: black;
+    font-style: italic;
+}
+
 #logo {
     position: fixed;
     margin: 0;
